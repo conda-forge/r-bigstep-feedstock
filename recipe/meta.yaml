@@ -15,7 +15,7 @@ source:
 
 build:
   merge_build_host: True  # [win]
-  number: 0
+  number: 1
   skip: true  # [win32]
   rpaths:
     - lib/R/lib/
@@ -45,7 +45,7 @@ test:
     - "\"%R%\" -e \"library('bigstep')\""  # [win]
 
 about:
-  home: https://CRAN.R-project.org/package=bigstep
+  home: http://github.com/pmszulc/bigstep
   license: GPL-3
   summary: Selecting linear and generalized linear models for large data sets using modified
     stepwise procedure and modern selection criteria (like modifications of Bayesian
@@ -62,3 +62,4 @@ extra:
     - daler
     - jdblischak
     - cbrueffer
+    - dbast
