@@ -1,7 +1,7 @@
 About r-bigstep
 ===============
 
-Home: https://CRAN.R-project.org/package=bigstep
+Home: http://github.com/pmszulc/bigstep
 
 Package license: GPL-3
 
