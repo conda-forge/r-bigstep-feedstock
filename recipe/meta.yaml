@@ -14,9 +14,9 @@ source:
   sha256: c5fe0b04478ac45af7dfdff3d6d6da5e47f83391faee8ed6d861b7aaec73853c
 
 build:
+  noarch: generic
   merge_build_host: True  # [win]
-  number: 1
-  skip: true  # [win32]
+  number: 1001
   rpaths:
     - lib/R/lib/
     - lib/
@@ -52,8 +52,7 @@ about:
     Information Criterion). Selection can be performed on data which exceed RAM capacity.
     Special selection strategy is available, faster than classical stepwise procedure.
   license_family: GPL3
-  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'  # [unix]
-  license_file: '{{ environ["PREFIX"] }}\R\share\licenses\GPL-3'  # [win]
+  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
 
 extra:
   recipe-maintainers:
