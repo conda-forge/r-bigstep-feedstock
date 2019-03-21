@@ -1,4 +1,4 @@
-{% set version = '1.0.0' %}
+{% set version = "1.0.1" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/bigstep_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/bigstep/bigstep_{{ version }}.tar.gz
-  sha256: 6d5134306be659217bb3682618d5181297aa1c6dd14ffaf03105ee8f893a70ae
+  sha256: dd001b5613e625220986ec0b5a785d5059564a70c1de2f8855ad37abed7923f5
 
 build:
   merge_build_host: True  # [win]
