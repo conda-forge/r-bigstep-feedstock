@@ -47,7 +47,7 @@ test:
 
 about:
   home: http://github.com/pmszulc/bigstep
-  license: GPL-3
+  license: GPL-3.0-only
   summary: Selecting linear and generalized linear models for large data sets using modified
     stepwise procedure and modern selection criteria (like modifications of Bayesian
     Information Criterion). Selection can be performed on data which exceed RAM capacity.
