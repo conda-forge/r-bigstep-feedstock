@@ -1,4 +1,4 @@
-{% set version = '1.0.3' %}
+{% set version = "1.1.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/bigstep_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/bigstep/bigstep_{{ version }}.tar.gz
-  sha256: 02ad13485abc3f09dc0bda61efa6886becde9d6969d32eefdfc5622ce90ef779
+  sha256: 0a3447ea86a40c398c6cd82c8d3201f3e64179aecb8ad117110062b66abb841e
 
 build:
-  merge_build_host: True  # [win]
-  number: 2
+  merge_build_host: true  # [win]
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -48,12 +48,10 @@ test:
 about:
   home: http://github.com/pmszulc/bigstep
   license: GPL-3.0-only
-  summary: Selecting linear and generalized linear models for large data sets using modified
-    stepwise procedure and modern selection criteria (like modifications of Bayesian
-    Information Criterion). Selection can be performed on data which exceed RAM capacity.
+  summary: Selecting linear and generalized linear models for large data sets using modified stepwise procedure and modern selection criteria (like modifications of Bayesian Information Criterion). Selection can be performed on data which exceed RAM capacity.
   license_family: GPL3
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
 
 extra:
   recipe-maintainers:
