@@ -1,11 +1,11 @@
-About r-bigstep
-===============
+About r-bigstep-feedstock
+=========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-bigstep-feedstock/blob/main/LICENSE.txt)
 
 Home: http://github.com/pmszulc/bigstep
 
 Package license: GPL-3.0-only
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-bigstep-feedstock/blob/main/LICENSE.txt)
 
 Summary: Selecting linear and generalized linear models for large data sets using modified stepwise procedure and modern selection criteria (like modifications of Bayesian Information Criterion). Selection can be performed on data which exceed RAM capacity.
 
